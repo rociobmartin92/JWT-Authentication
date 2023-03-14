@@ -1,7 +1,15 @@
 {
   "expo": {
-    "name": "my-app",
-    "slug": "my-app",
+    "plugins": [
+      [
+        "react-native-auth0",
+        {
+          "domain": "dev-g1perv3smk8ntu2k.eu.auth0.com"
+        }
+      ]
+    ],
+    "name": "jswauth",
+    "slug": "jswauth",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,13 +23,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "jswauth"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.racingclub.myapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
